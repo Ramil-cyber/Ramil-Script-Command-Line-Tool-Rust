@@ -1,14 +1,14 @@
-[![CI/CD](https://github.com/nogibjj/PacRamil-Script-Command-Line-Tool-Rust/actions/workflows/ci.yaml/badge.svg)](https://github.com/nogibjj/PacRamil-Script-Command-Line-Tool-Rust/actions/workflows/ci.yaml)
+[![CI/CD](https://github.com/nogibjj/Ramil-Script-Command-Line-Tool-Rust/actions/workflows/ci.yaml/badge.svg)](https://github.com/nogibjj/Ramil-Script-Command-Line-Tool-Rust/actions/workflows/ci.yaml)
 
 ## Overview
 
-This repository contains a command-line tool written in Rust that allows users to calculate monthly loan payments based on the principal amount, annual interest rate, and the number of payment periods. It provides a simple and effective way to perform financial calculations directly from the terminal. This project contain CI/CD , appropriate Testing, Command Line Interface, simple Rust script and reproducible environment for cloud platforms. 
+This repository contains a command-line tool written in Rust that allows users to calculate monthly loan payments based on the principal amount, annual interest rate, and the number of payment periods. It provides a simple and effective way to perform financial calculations directly from the terminal using Rust. This project contain CI/CD , appropriate Testing, Command Line Interface, simple Rust script and reproducible environment for cloud platforms. 
 
 ## Features
 
 - Calculate monthly loan payments based on user inputs.
 - Modular design with separate functions for different calculations.
-- Command-line interface (CLI) for easy interaction.
+- Command-line interface (CLI) for easy interaction for Rust script.
 
 ## Installation
 
