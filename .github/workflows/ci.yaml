@@ -1,0 +1,41 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        override: true
+
+    - name: Check
+      run: make check
+
+    - name: Format
+      run: make format
+
+    - name: Test
+      run: make test
+
+    - name: Release
+      run: cargo build --release
+
+    - name: Upload Binary Artifact
+      uses: actions/upload-artifact@v4 #v3 is scheduled for deprecation Nov 30 2024 check marketplace
+      with:
+        name: Rust Artificat Binary
+        path: target/release/loan_payment
